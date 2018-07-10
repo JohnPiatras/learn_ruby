@@ -16,7 +16,8 @@ class Timer
     hours = minutes / 60
     minutes = minutes % 60
 
-    pad(hours) + ":" + pad(minutes) + ":" + pad(seconds % 60)
+    #pad(hours) + ":" + pad(minutes) + ":" + pad(seconds % 60)
+    "%.2d:%.2d:%.2d" % [hours, minutes, @seconds % 60]
   end
 
   private
